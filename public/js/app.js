@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded')
-
 // acceso al form del index.hbs 
 const weatherForm = document.querySelector('form')
 // acceso al input
