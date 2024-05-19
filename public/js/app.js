@@ -14,8 +14,10 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'loading...'
     messageTwo.textContent = ''
 
-    // para rescatar del LADO DEL CLIENTE, el resultado de una URL
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    // Usamos FETCH para rescatar del LADO DEL CLIENTE, el resultado de una URL
+    // Quitamos la primer parte de la URL ya que ahora lo brindará la APP de Producción
+    // fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
 
         response.json().then((data) => {
 

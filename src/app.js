@@ -10,6 +10,8 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
+// Obtiene el PUERTO que sera proveeido por la app que levanta a PRODUCCIÓN (para localhost va a setear por default puerto = 3000)
+const port = process.env.PORT || 3000
 
 // Variables del Core de Node que indican la ruta y el archivo actual.
 // console.log(__dirname)
@@ -123,6 +125,6 @@ app.get('*', (req, res) => {
 })
 
 // Inicializa el server en el puerto 3000 (comunmente usado en desarrollo) en otros ambientes cambia. "localhost:3000"
-app.listen(3000, () => {
-    console.log('Servers is up on port 3000')
+app.listen(port, () => {
+    console.log('Servers is up on port ' + port)
 })
