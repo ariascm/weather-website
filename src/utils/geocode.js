@@ -1,9 +1,10 @@
 //npm i request
 const request = require('request')
+const geocode_token = process.env.GEOCODE_TOKEN
 
 const geocode = (address, callback) => {
     // encodeURIComponent -> convierte los caracteres especiales ( ?,!, etc ) en caracteres legibles para la URI ( %3F )
-    const url = 'https://geocode.maps.co/search?q=' + encodeURIComponent(address) + '&api_key=66395a2391e0c422422264plr187579'
+    const url = 'https://geocode.maps.co/search?q=' + encodeURIComponent(address) + '&api_key=' + geocode_token
 
     request({ url, json: true }, (error, { body } = {}) => {
         if (error) {

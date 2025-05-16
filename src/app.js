@@ -1,3 +1,4 @@
+require('dotenv').config();
 // path is include in node core modules. It doesnt require previous installation
 const path = require('path')
 // express require node i express

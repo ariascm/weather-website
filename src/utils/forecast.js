@@ -1,11 +1,12 @@
 //npm i request
 const request = require('request')
+const watherstack_key = process.env.WEATHERSTACK_KEY
 
 // https://api.openweathermap.org/data/2.5/weather?lat=-32.8908&lon=-68.8272&appid=1472f72dbb0d310ac5828ed656cfca2f&units=metric
 
 
 const forecast = (lat, lon, callback) => {
-    const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=1472f72dbb0d310ac5828ed656cfca2f&units=metric'
+    const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + watherstack_key + '&units=metric'
     console.log({ lat, lon })
     request({ url, json: true }, (error, { body }) => {
         if (error) {
