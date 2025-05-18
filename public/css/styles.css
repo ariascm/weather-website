@@ -5,15 +5,13 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 
-    /* agregamos Flex para ubicar los elementos. direction column para que ponga los elementors uno arriba del otro y no al costado */
+
     display: flex;
     flex-direction: column;
-    /* Seteamos 100viewport height (para que ocupe toda la ventana gráfica disponible) */
     min-height: 100vh;
 }
 
 .main-content {
-    /* Para que el contenido ocupe todo el lugar posible y asi empuje el footer hacia abajo (requiere min-height tambien) */
     flex-grow: 1;
 }
 
@@ -34,17 +32,12 @@ h1 {
     margin-bottom: 16px;
 }
 
-/* dentro de header, apuntamos a los elementos a */
+
 header a {
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
 }
-
-/* en vez de configurar todas las img, agregamos una clase */
-/* img {
-    width: 700px;
-} */
 
 .portrait {
     width: 700px;

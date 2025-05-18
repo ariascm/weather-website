@@ -1,4 +1,3 @@
-//npm i request
 const request = require('request')
 const OPENWEATHER_TOKEN = process.env.OPENWEATHER_TOKEN
 
