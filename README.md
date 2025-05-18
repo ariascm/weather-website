@@ -44,7 +44,7 @@ Aplicación web que permite buscar el clima actual de cualquier lugar ingresando
     ├── src/utils/        # Lógica de geolocalización y clima
     ├── views/            # Plantillas Handlebars
     ├── app.js
-    ├── .env              # Variables privadas (no se sube)
+    ├── .env              # Variables privadas
     └── README.md
 
 ## 👤 Autor
