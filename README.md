@@ -18,7 +18,7 @@ Aplicación web que permite buscar el clima actual de cualquier lugar ingresando
 ## 🛠️ Instalación y uso local
 
 1. Cloná el repositorio:   
-    git clone https://github.com/ariascm/node3-weather-website.git
+    git clone https://github.com/ariascm/weather-website.git
     cd node3-weather-website
 
 2. Instalá las dependencias:
